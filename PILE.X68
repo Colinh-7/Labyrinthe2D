@@ -1,0 +1,26 @@
+INITPILE:
+    MOVE.L #TAILLE_PILE, POSITION_PILE
+    RTS
+    
+EMPILER:
+    MOVE.L POSITION_PILE, A0
+    MOVE.L VALEUR_A_EMPILER, (A0)
+    ADD.L #4, POSITION_PILE
+    RTS
+    
+DEPILER:
+    SUB.L #4, POSITION_PILE
+    MOVE.L POSITION_PILE, A0
+    MOVE.L (A0), VALEUR_DEPILER
+    SUB.L #4, A0
+    CMP.L #0, (A0)
+    BEQ FINPILE
+    BRA FINDEPILER
+        FINPILE:
+            MOVE.B #1, ESTVIDE
+    FINDEPILER:
+    RTS 
+*~Font name~Courier New~
+*~Font size~10~
+*~Tab type~1~
+*~Tab size~4~
