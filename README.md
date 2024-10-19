@@ -1,7 +1,7 @@
-### Labyrinthe en 2D
+### 2D Maze
 
-Projet de L2 Informatique en assembleur 68000. 
-C'est un petit jeu de labyrinthe se générant aléatoirement et avec une interface graphique simple.
-## Utilisation
+Computer Science Project in Assembly Language. (Motorola 68K)
+This is a small maze game that generates randomly and features a simple graphical interface.
+Usage
 
-Ce projet peut être utilisé grâce à l'émulateur Easy68K.
+This project can be used with the Easy68K emulator.
